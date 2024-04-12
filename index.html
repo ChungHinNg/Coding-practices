@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practices Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <img src="./pic/2.png" alt="Logo" class="fixed-logo" width="8%">
+
+    <div class="title"><h1>Practices Page</h1></div>
+    <div class="container"> 
+    <div class="tabbar">
+    <button id="btn1" onclick="Open1()" style="background-color: #d9e5f9; color: rgba(37, 37, 236, 0.364)">Carousel</button>
+    <button id="btn2" onclick="Open2()">Weather app</button>
+    <button id="btn3" onclick="Open3()">Contact form</button>
+    <button id="btn4" onclick="Open4()">Accordion</button>
+    <button id="btn5" onclick="Open5()">To do list</button>
+
+    </div>
+<!--content1-->
+<div id="content1" class="content">
+
+    <div class="carousel">
+        
+        <button class="carouselButton1" id="pB">&#8656;</button> <h2 class="subTitle1">Welcome~</h2>
+<div class="listcontainer">
+<ul class="itemList">
+<li class="item" id="p1" style="opacity: 1;"><img src="./pic/2.jpg" width="520px"></li>
+<li class="item"id="p2"><img src="./pic/1.jpg" width="520px"></li>
+<li class="item"id="p3"><img src="./pic/46646d432daa068186a7c221857293c8.jpg" width="520px"></li>
+<li class="item"id="p4"><img src="./pic/326343597_501883465192733_4870959272986263837_n.jpg"width="520px"></li>
+</ul>
+</div>
+        <button class="carouselButton2" id="nB">&#8658;</button>        
+</div>
+
+   
+</div>
+
+<!--content2-->
+
+<div id="content2" class="content">
+
+
+
+
+</div>
+
+<!--content3-->
+<div id="content3" class="content">
+    <div><h2 class="subTitle3">Contact form</h2>
+
+        <form
+  action="https://formspree.io/f/xnqeoobv"
+  method="POST"
+>
+            <label for="fname">First name:</label><br>
+            <input class="inputBox" type="text" id="fname" name="fname" placeholder="" required><br><br>
+            <label for="lname">Last name:</label><br>
+            <input class="inputBox" type="text" id="lname" name="lname" placeholder="" required><br><br>
+            <label for="lname">E-mail:</label><br>
+            <input class="inputBox" type="email" id="email" name="email" placeholder="&nbsp;&nbsp;required" required><br><br>
+            <label for="lname">Message:</label><br>
+            <textarea class="inputBox" rows="5" cols="60" name="text" placeholder="&nbsp;&nbsp;required" required></textarea><br><br>
+            <button type="submit" id="cb">Contact me</button>
+            <div>            <br>
+ <img src="./pic/html.png" width="5%">
+                 <img src="./pic/css.png" width="5%"> 
+                 <img src="./pic/javascript.png" width="5%">
+                  <img src="./pic/formspree.png" width="5%"></div>
+
+        </form>
+
+</div>
+</div>
+
+
+<!--content4-->
+
+
+<div id="content4" class="content" label="accordion">
+    <div class="accordion"><h2 class="subTitle4">Accordion</h2>
+    <div class="accordionTittle" id="aT1" onclick="showAccordionContent('aC1')"><h3>Tittle 1</h3></div>
+    <div class="accordionContent" id="aC1">
+    <p>Once upon a time, in a small village nestled between rolling hills<br> and lush forests,
+        there lived a young girl named Emily. Emily was<br>
+         known throughout the village for her boundless curiosity and<br> adventurous spirit. Every day, she would explore the woods,<br> discovering hidden trails and secret clearings<br> where she would lose herself in wonder.
+    </p></div>
+
+    <div class="accordionTittle" id="aT2" onclick="showAccordionContent('aC2')"><h3>Tittle 2</h3></div>
+    <div class="accordionContent" id="aC2">
+    <p>Once upon a time, in a small village nestled between rolling hills<br> and lush forests,
+        there lived a young girl named Emily. Emily was<br>
+         known throughout the village for her boundless curiosity and<br> adventurous spirit. Every day, she would explore the woods,<br> discovering hidden trails and secret clearings<br> where she would lose herself in wonder.
+    </p></div>
+    
+     <div class="accordionTittle" id="aT3" onclick="showAccordionContent('aC3')"><h3>Tittle 3</h3></div>
+    <div class="accordionContent" id="aC3">
+    <p>Once upon a time, in a small village nestled between rolling hills<br> and lush forests,
+        there lived a young girl named Emily. Emily was<br>
+         known throughout the village for her boundless curiosity and<br> adventurous spirit. Every day, she would explore the woods,<br> discovering hidden trails and secret clearings<br> where she would lose herself in wonder.
+    </p></div>
+    <br><br> <img src="./pic/html.png" width="5%">
+        <img src="./pic/css.png" width="5%"> 
+        <img src="./pic/javascript.png" width="5%">
+    
+
+</div>
+</div>
+<!--content5-->
+
+<div id="content5" class="content">
+    <div ><h2 class="subTitle5">To do list</h2><p>
+        <input type="text" id="inputBox" placeholder="Add your text" >
+        <button id="button1" onclick=addlist()>Add</button></p>
+    <ul id="list-container"style="margin: 2%" >
+        <li>Task 1<button class="delete-btn" onclick="deleteLi(this)">x</button></li>
+        <li>Task 2<button class="delete-btn" onclick="deleteLi(this)">x</button></li>
+        <li>Task 3<button class="delete-btn" onclick="deleteLi(this)">x</button></li>
+
+    </ul>
+    <div>           
+         <br>
+            <img src="./pic/html.png" width="5%">
+            <img src="./pic/css.png" width="5%"> 
+            <img src="./pic/javascript.png" width="5%">
+    </div>
+    </div>
+
+<script src="script.js">
+  
+</script>
+</body>
+
+</html>

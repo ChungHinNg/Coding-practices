@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.title{ margin: 100px auto;
+    text-align: center;
+    color: #1f4855d1;
+filter: drop-shadow(0px 5px 5px #0192be70);
+animation: animateTitle 300ms ease-in-out ;
+}
+@keyframes animateTitle {
+    from {
+      transform: scale(0.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  /* sub tittle*/
+  .subTitle1{ 
+    color: #1f4855d1;
+filter: drop-shadow(0px 5px 5px #0192be70);
+animation: animateTitle 300ms ease-in-out ;
+padding: 30px 0;
+margin-left: 5cm;
+}
+.subTitle2{ 
+    color: #1f4855d1;
+filter: drop-shadow(0px 5px 5px #0192be70);
+animation: animateTitle 300ms ease-in-out ;
+padding: 30px 0;
+margin-left: 5cm;
+}
+.subTitle3{ 
+    color: #1f4855d1;
+filter: drop-shadow(0px 5px 5px #0192be70);
+animation: animateTitle 300ms ease-in-out ;
+padding: 30px 0;
+margin-left: 3.5cm;
+}
+.subTitle4{ 
+    color: #1f4855d1;
+filter: drop-shadow(0px 5px 5px #0192be70);
+animation: animateTitle 300ms ease-in-out ;
+padding: 30px 0;
+margin-left: 4.5cm;
+}
+.subTitle5{ 
+    color: #1f4855d1;
+filter: drop-shadow(0px 5px 5px #0192be70);
+animation: animateTitle 300ms ease-in-out ;
+padding: 30px 0;
+margin-left: 1.5cm;
+}
+
+  /* sub tittle end*/
+
+body{    background-image: linear-gradient(rgb(255, 246, 246), rgb(33, 44, 129));
+
+}
+.container{
+    width: 50%;
+    height: 750px;
+   /* transform: rotate(30deg);*/
+    background-color: #c8dbe33c;
+    border-radius: 5%;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+
+}
+
+
+.tabbar{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.tabbar button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 15px;
+    border-radius: 400px;
+    transition:all 500ms ease-in-out;
+}
+
+.tabbar button:hover{
+ color: blue;
+ transition:all 300ms ease-in-out;
+}
+
+.content{
+    display: flex;
+        margin: 10px auto;
+        position: absolute;
+        transform: translateX(1000px);
+        transition: 0.5s;
+}
+
+
+
+#content1{
+transform: translateX(120px);
+}
+
+
+/* logo animation */
+.fixed-logo {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 9999; /* Ensure it's above other content */
+    transition: all 5s ease; /* Smooth transition */
+}
+
+.fixed-logo.move {
+    right: 1380px; /* New position when moved */
+    bottom: 20px; /* Adjust as needed */
+    transform: rotate(3240deg); /* Adjust the rotation angle as needed */
+
+}
+
+/* logo animation */
+
+/*Content1 to do list*/
+
+#button1{
+    width: 40px;
+        padding: 8px 5px;
+        border-radius: 20px;
+        text-decoration: none;
+        background-color:  #ff7746cf;
+        color: #fff;
+        text-align: center; 
+       
+        }
+
+.delete-btn{
+    width: 23px;
+        border-radius: 10px;
+        background-color:  #ff7746cf;
+        color: #fff;
+       
+        }
+
+/*Content1 to do list end*/
+
+/*Content2 Accordion*/
+
+
+.accordionTittle {border-bottom: 1px solid#a6cde6;padding: 10px;max-width: 440px;
+}
+.accordionTittle:hover { cursor: pointer;    background-color: #80a5be;
+}
+.accordionContent{max-height: 0px; overflow: hidden; 
+    transition:all 100ms ease-in;
+}
+
+/*Content2 Accordion end*/
+
+/*Content3 Carousel */
+
+.itemList{list-style: none;}
+.item{position: absolute;opacity: 0;transition: 300ms ease-in-out}
+.listcontainer{position: relative;height: 8.5cm;width: 15cm;}
+
+.carouselButton1{position: absolute;z-index: 2;top: 75%;left: 0; background: none;background-color: #879397c7;width: 0.8cm;height: 0.8cm;}
+.carouselButton2{position: absolute;z-index: 2;top: 75%;right: 0;margin-right: 46px; background: none;background-color: #879397c7;width: 0.8cm;height: 0.8cm;}
+/*Content3 Carousel end */
+
+/*Contact form */
+.inputBox{border-radius: 10px;margin-top: 10px;}
+#cb{    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    background-color:  #1f4855d1;
+    color: #fff;
+    opacity: 0.5;
+    transition:all 300ms ease-in;
+   }
+   #cb:hover {     opacity: 1; }
+ /*Contact form end */
