@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practices Page</title>
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
 </head>
 <body>
@@ -44,9 +48,57 @@
 
 <div id="content2" class="content">
 
-
-
-
+      <table>
+        <tr>
+        <td>
+    <div class="containerW">
+        <div class="search-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" placeholder="Enter your location" id="search-inv" />
+          <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+  
+        <div class="not-found">
+          <img src="pic/404.png" />
+          <p>Sorry, Location Not Found!</p>
+        </div>
+  
+        <div class="weather-box">
+          <img src="" />
+          <p class="temperature"></p>
+          <p class="description"></p>
+        </div>
+  
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fa-solid fa-water"></i>
+            <div class="text">
+              <span></span>
+              <p>Humidity</p>
+            </div>
+          </div>
+  
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <span></span>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+</tr>
+    <tr> <td>
+      <div class="Wfooter">
+        <img src="./pic/html.png" width="5%">
+        <img src="./pic/css.png" width="5%"> 
+        <img src="./pic/javascript.png" width="5%">
+        <img src="./pic/openweathermap.png" width="5%"></div>
+    </td>
+        </tr>
+      
+    </table>
 </div>
 
 <!--content3-->
@@ -64,7 +116,7 @@
             <label for="lname">E-mail:</label><br>
             <input class="inputBox" type="email" id="email" name="email" placeholder="&nbsp;&nbsp;required" required><br><br>
             <label for="lname">Message:</label><br>
-            <textarea class="inputBox" rows="5" cols="60" name="text" placeholder="&nbsp;&nbsp;required" required></textarea><br><br>
+            <textarea class="inputBox" rows="5" cols="60" name="text" placeholder="&nbsp;&nbsp;required (p.s. email function included)" required></textarea><br><br>
             <button type="submit" id="cb">Contact me</button>
             <div>            <br>
  <img src="./pic/html.png" width="5%">
