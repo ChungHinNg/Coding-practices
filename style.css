@@ -33,14 +33,14 @@ margin-left: 5cm;
 filter: drop-shadow(0px 5px 5px #0192be70);
 animation: animateTitle 300ms ease-in-out ;
 padding: 30px 0;
-margin-left: 5cm;
+margin-left: 3.7cm;
 }
 .subTitle3{ 
     color: #1f4855d1;
 filter: drop-shadow(0px 5px 5px #0192be70);
 animation: animateTitle 300ms ease-in-out ;
 padding: 30px 0;
-margin-left: 3.5cm;
+margin-left: 3.0cm;
 }
 .subTitle4{ 
     color: #1f4855d1;
@@ -54,7 +54,7 @@ margin-left: 4.5cm;
 filter: drop-shadow(0px 5px 5px #0192be70);
 animation: animateTitle 300ms ease-in-out ;
 padding: 30px 0;
-margin-left: 1.5cm;
+margin-left: 0.3cm;
 }
 
   /* sub tittle end*/
